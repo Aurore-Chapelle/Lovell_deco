@@ -1,0 +1,424 @@
+/* VARIABLES */
+
+:root {
+/* couleurs */
+--primary-color: #004F59;
+--secondary-color: #FEFFF9;
+--golden-color: #D5C7A0;
+--black-color: #000000;
+/* polices */
+--font-primary: 'Lato', sans-serif;
+--font-secondary: 'Poiret One', cursive;
+}
+
+/* PAGE */
+
+* {box-sizing: border-box;}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0; font-size: 1.6rem;
+    font-family: var(--font-primary);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* classes récurrentes */
+.bandeau {
+height: 150px;
+background-color: #FEFFF9;
+}
+.h2-poiretOne-blue {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 40px;
+}
+.h2-poiretOne-white {
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 40px;
+}
+.blue-button {
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.white-button {
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: var(--primarary-color);
+    border-color: var(--primary-color);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(120, 108, 131);
+}
+#navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.logo {
+    height: 100%;
+    cursor: pointer;
+}
+nav {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-items: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--primary-color);
+    width: 100%;
+    padding: 0px;
+    margin: 20px 100px;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+#herosection {
+    background-color: burlywood;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+}
+#herosection figure{
+    margin: 0;
+}
+.agence {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.encart {
+    background-color: rgba(217, 217, 217, 0.65);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.encart p {
+    width: 392px;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+.encart button {
+    width: 371px;
+}
+
+/* MAIN */
+
+main {
+    background-color: darkorchid;
+    margin: 0;
+    padding: 0;
+}
+
+/* Réalisations */
+
+#realisations h1 {
+    background-color: rgb(122, 106, 72);
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 320px;
+    margin-bottom: 10px;
+}
+#realisations p {
+    background-color: darkorange;
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    font-style: italic;
+    margin-left: 320px;
+    margin-bottom: 30px;
+}
+#realisations img {
+    background-color: aquamarine;
+    border-radius: 5px;
+    height: auto;
+    width: 340px;
+}
+#realisations figure {
+    background-color: cornsilk;
+    margin: 0 320px;
+}
+
+/* Style du slider */
+.slider {
+    background-color: rgb(199, 144, 173);
+    height: 400px;
+    width: 1280px;
+}
+
+.slider .slick-slide {
+    background-color: rgb(66, 58, 24);
+    width: 400px; /* Largeur des slides, ajustable */
+}
+
+/* AGENCE */
+
+#agence {
+background-color: lightskyblue;
+display: flex;
+justify-content: center;
+
+}
+.agence-container {
+    background-color: mediumvioletred;
+    /* width: 660px; */
+}
+.p-localisation {
+    display: flex;
+    background-color: lemonchiffon;
+    padding-top: 0px;
+}
+.p-team {
+    background-color: lavender;
+    display: flex;
+}
+#agence .h2-poiretOne-blue{
+    background-color: lightcoral;
+    width: 300px;
+    margin-right: 30px;
+    text-align: right;
+    margin-top: 0;
+}
+.vertical-line {
+    width: 250px;
+    height: 1px;
+    background-color: var(--golden-color);
+    margin-top: 15px;
+    margin-left: 50px;
+}
+#agence p {
+    background-color: lightpink;
+    width: 330px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#agence button {
+    width: 284px;
+    margin-left: 330px;
+}
+
+/* PRESTATIONS */
+
+#prestations {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+#prestations .img-container {
+    background-color: aquamarine;
+    width: 824px;
+    height: 530px;
+    margin-right: 30px;
+}
+#prestations img {
+    /* object-fit: contain; */
+}
+.p-prestations {
+    background-color: hotpink;
+    width: 426px;
+    height: 530px;
+}
+#prestations .vertical-line {
+    margin-left: 0;
+}
+#prestations h2.h2-poiretOne-white {
+    background-color: cornflowerblue;
+    width: 426px;
+    margin-top: 0;
+}
+#prestations p {
+    background-color: rgb(151, 214, 214);
+    width: 426px;
+    color: var(--secondary-color);
+    /* padding-bottom: 0; */
+    margin-bottom: 30px;
+}
+#prestations button {
+    width: 373px;
+}
+
+/* TENDANCES */
+
+#tendances {
+    background-color: plum;
+    display: flex;
+    justify-content: center;
+}
+#tendances .img-container {
+    background-color: aquamarine;
+
+}
+.img-container figure {
+    margin: 0;
+}
+#tendances img {
+    background-color: darksalmon;
+}
+.bloc {
+    background-color: darkslategray;
+}
+#tendances .paragraphe-tendances {
+    background-color: lightseagreen;
+    display: flex;
+margin: 0;
+}
+#tendances h2 {
+    background-color: burlywood;
+    width: 300px;
+    margin-right: 30px;
+}
+#tendances p {
+    background-color: cornflowerblue;
+    width: 330px;
+    margin-top: 30px 0;
+}
+.paragraphe-tendances + .blue-button {
+    width: 284px;
+    margin-left: 330px;
+}
+#tendances .paragraphe-newsletter {
+    background-color: salmon;
+    display: flex;
+    justify-content: flex-end;
+}
+.paragraphe-newsletter + .blue-button {
+    width: 366px;
+    margin-left: 294px;
+}
+
+/* FOOTER */
+
+/* structure du footer */
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+}
+#informations {
+    background-color: lightseagreen;
+    width: 30%;
+
+}
+#reseaux-sociaux {
+    background-color: lightcyan;
+    width: 40%;
+}
+#liens-pages {
+    background-color: lightcoral;
+    width: 30%;
+}
+
+/* rubrique informations */
+
+.contacts {
+    background-color: cornsilk;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+.adresse {
+    background-color: lightskyblue;
+}
+.adresse p {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.mail {
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+}
+.telephone {
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#informations .white-button {
+    width: 349px;
+}
+.obligations-legales {
+    background-color: mediumspringgreen;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-bottom: 45px;
+}
+.cgv {
+    background-color: lightgray;
+}
+.mentions-legales {
+    background-color: lightsalmon;
+}
+
+/* rubrique réseaux sociaux */
+
+.logo {
+    background-color: mediumorchid;
+    height: auto;
+}
+.liens-container {
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.liens-reseaux {
+    background-color: coral;
+    display: flex;
+  
+}
+.liens-reseaux i{
+    background-color: rgb(252, 248, 247);
+    width: 30%;
+}
+.logos-reseaux {
+    background-color: gold;
+}
+.copyright {
+    background-color: greenyellow;
+}
