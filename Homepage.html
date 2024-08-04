@@ -3,75 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lovell deco Homepage</title>
-
+    <title>Lovell Deco Homepage</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-    
     <script src="Homepage.js" defer></script>
-
 </head>
 <body>
     <header>
-<div id="navbar">
-    <figure>
-        <img class="logo" src="img/logo header.png" alt="Logo">
-    </figure>
-    <nav>
-        <ul>
-            <li>L'agence</li>
-            <li>Réalisations</li>
-            <li>Prestations</li>
-            <li>Tendances</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
-</div>
-<section id="herosection">
-    <figure>
-        <img class="agence" src="img/agence.jpg" alt="">
-        <div class="encart">
-            <figcaption>
-                <p>donnez vie à vos envies</p>
-                <button class="white-button">Découvrir nos prestations</button>
-            </figcaption>
-        </figure>
-    </div>
-</section>
+        <div id="navbar">
+            <figure>
+                <img class="logo" src="img/logo header.png" alt="Logo">
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="/l'agence.html">l'agence</a></li>
+                    <li><a href="/réalisations.html">réalisations</a></li>
+                    <li><a href="/prestations.html">prestations</a></li>
+                    <li><a href="/tendances.html">tendances</a></li>
+                    <li><a href="/contacts.html">contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="herosection">
+            <figure>
+                <img class="agence" src="img/agence.jpg" alt="">
+                <figcaption class="encart">
+                    <p>donnez vie à vos envies</p>
+                    <button class="white-button">Découvrir nos prestations</button>
+                </figcaption>
+            </figure>
+        </section>
     </header>
 
-<div class="bandeau"></div>
+    <div class="bandeau1"></div>
 
     <main>
-<section id="realisations">
-    <h1>une sélection de nos derniers projets</h1>
-    <p>Imaginés et réalisés avec passion</p>
-<figure>
-    <div class="slider">
-    <img src="img/sdbarches.jpg" alt="">
-    <img src="img/1c04ef961475132b492082b8a6bc2dcb.jpg" alt="">
-    <img src="img/af311ba696b49b2f5e25a0ab96b9f332.jpg" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-</div>
-    <figcaption>
-        <button>Découvrir nos réalisations</button>
-    </figcaption>
-</figure>
+        <section id="realisations">
+            <h1>une sélection de nos derniers projets</h1>
+            <p>Imaginés et réalisés avec passion</p>
+
+            <div class="multiple-items">
+                <div>
+                    <img src="img/slider/1.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slider/2.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slider/3.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slider/4.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slider/5.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slider/6.png" alt="">
+                </div>
+            </div>
+            <button>Découvrir nos réalisations</button>
+
 </section>
+
+<div class="bandeau2"></div>
 
 <section id="agence">
 
@@ -100,14 +103,16 @@
 
 </section>
 
-<div class="bandeau"></div>
+<div class="bandeau2"></div>
 
 <section id="prestations">
-  <div class="img-container">
+    
+    <div class="img-prestations">
         <figure>
-            <!-- <img src="img/tabourets.jpg" alt=""> -->
+            <img src="img/homepage_prestations.png" alt="">
         </figure>
   </div>
+
     <div class="p-prestations">
         <h2 class="h2-poiretOne-white">Une approche personnalisée pour chaque projet
             <div class="vertical-line"></div>
@@ -116,29 +121,29 @@
             Lovell Déco conçoit votre projet sur mesure, en vous livrant une prestation globale et un accompagnement personnalisé.<br><br>
             Que vous cherchiez à rénover une pièce de votre maison, de votre appartement ou à concevoir un nouveau magasin, nous sommes là pour vous aider à réaliser votre vision.</p>
             
-            <button class="white-button">Découvrir nos réalisations</button>
+            <button class="white-button">Découvrir nos prestations</button>
         </div>
     </div>
 </section>
 
-<div class="bandeau"></div>
+
+<div class="bandeau2"></div>
+
 
 <section id="tendances">
-    <div class="img-container">
-        <figure>
-            <img src="" alt="">
-        </figure>
-        
-<div class="bloc">
+
+<div class="img-tendances">
+    <figure>
+        <img src="img/homepage_tendances.png" alt="">
+    </figure>
 
         <div class="paragraphe-tendances">
-            <h2 class="h2-poiretOne-blue">Une approche personnalisée pour chaque projet
+            <h2 class="h2-poiretOne-blue">Suivez les dernières tendances
                 <div class="vertical-line"></div>
             </h2>
             <p>Passionnés par les intérieurs qui ont une histoire, nous aimons conserver quelques-unes des traces du passé tout en remettant le lieu au goût du jour et en l’optimisant. <br><br>
                 Lovell Déco conçoit votre projet sur mesure, en vous livrant une prestation globale et un accompagnement personnalisé.<br><br>
                 Que vous cherchiez à rénover une pièce de votre maison, de votre appartement ou à concevoir un nouveau magasin, nous sommes là pour vous aider à réaliser votre vision.</p>
-                
             </div>
             <button class="blue-button">En savoir plus</button>
             
@@ -146,11 +151,11 @@
                 <p>Passionnés par les intérieurs qui ont une histoire, nous aimons conserver quelques-unes des traces du passé tout en remettant le lieu au goût du jour et en l’optimisant. <br><br>
                     Lovell Déco conçoit votre projet sur mesure, en vous livrant une prestation globale et un accompagnement personnalisé.<br><br>
                     Que vous cherchiez à rénover une pièce de votre maison, de votre appartement ou à concevoir un nouveau magasin, nous sommes là pour vous aider à réaliser votre vision.</p>
-                    
                 </div>
                 <button class="blue-button">S'abonner à la newsletter</button>
 </section>
-<div class="bandeau"></div>
+
+<div class="bandeau2"></div>
     </main>
 
     <footer>
@@ -167,15 +172,16 @@
 
 <div class="mail">
 <figure>
-    <img src="svg/mail.svg" alt="">
+
+    <i class="fas fa-envelope fa-1x"></i>
 </figure>
-    <a href="contact.lovelldeco@gmail.com">contact.lovelldeco@gmail.com</a>
+    <a href="mailto:contact.lovelldeco@gmail.com">contact.lovelldeco@gmail.com</a>
 </div>
 <div class="telephone">
     <figure>
-        <img src="svg/phone.svg" alt="">
+        <i class="fas fa-phone fa-1x"></i>
     </figure>
-    <a href="tel:+1234567890">06 38 93 87 36</a>
+    <a href="tel:0638938736">06 38 93 87 36</a>
 </div>
 <button class="white-button">Contactez-nous</button>
 </div>
@@ -202,7 +208,7 @@
 <div class="liens-reseaux">
     <p>Suivez-nous</p>
 
-    <div class="logos-reseaux"></div>
+    <div class="logos-reseaux">
     <a href="https://www.instagram.com/votrecompte/" target="_blank" aria-label="Instagram">
         <i class="fab fa-instagram fa-3x"></i>
       </a>
@@ -213,6 +219,7 @@
         <i class="fab fa-twitter fa-3x"></i>
       </a>
 </div>
+</div>
 
 <div class="copyright">
     <p>&copy; Art Key Tech - 2024.</p>
@@ -222,7 +229,16 @@
 </section>
 
 <section id="liens-pages">
-
+    <nav class="footer-nav">
+        <ul>
+          <li><a href="/accueil.html">Accueil</a></li>
+          <li><a href="/l'agence.html">l'agence</a></li>
+          <li><a href="/réalisations.html">réalisations</a></li>
+          <li><a href="/prestations.html">prestations</a></li>
+          <li><a href="/tendances.html">tendances</a></li>
+          <li><a href="/contacts.html">contacts</a></li>
+        </ul>
+      </nav>
 </section>
 
     </footer>
