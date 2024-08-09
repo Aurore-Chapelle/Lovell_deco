@@ -49,6 +49,71 @@ header {
     text-decoration: none;
 }
 
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #navbar li {
+        font-size: 16px;
+        transition: font-size 0.5s ease-in-out;
+    }
+    #navbar ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+
+    #dekstop-nav {
+        display: none;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+#navigation {
+    background-color: white;
+}
+
+.bandeau-bleu-burger {
+    background-color: var(--primary-color);
+    height: 10px;
+    width: 100%;
+}
+
+#navigation ul {
+    list-style: none;
+    background-color: beige;
+    height: 200px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#navigation ul li a {
+    background-color: rgb(252, 247, 248);
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#navigation ul li a:hover {
+    text-decoration: underline;
+    /* Ajoute un soulignement au survol si désiré */
+}
+
 #herosection {
     background-color: burlywood;
     position: relative;
