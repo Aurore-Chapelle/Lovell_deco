@@ -1,0 +1,41 @@
+/* Prestations */
+
+#prestations {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+#prestations .img-container {
+    margin-right: 30px;
+}
+
+.p-prestations {
+    background-color: hotpink;
+    width: 426px;
+    height: 530px;
+}
+
+#prestations .vertical-line {
+    margin-left: 0;
+}
+
+#prestations h2.h2-poiretOne-white {
+    background-color: cornflowerblue;
+    width: 426px;
+    margin-top: 0;
+}
+
+#prestations p {
+    background-color: rgb(151, 214, 214);
+    width: 426px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+#prestations button {
+    width: 373px;
+}

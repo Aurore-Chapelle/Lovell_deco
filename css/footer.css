@@ -1,0 +1,170 @@
+/* FOOTER */
+
+/* structure du footer */
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+#informations {
+    background-color: lightseagreen;
+    width: 30%;
+    position: relative;
+}
+
+#reseaux-sociaux {
+    background-color: lightcyan;
+    width: 40%;
+}
+
+#liens-pages {
+    background-color: lightcoral;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* rubrique informations */
+
+.contacts {
+    background-color: cornsilk;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+.adresse {
+    background-color: lightskyblue;
+    color: var(--secondary-color);
+}
+
+.adresse p {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.mail {
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+}
+
+#informations i {
+    color: var(--secondary-color);
+}
+
+.mail a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.telephone {
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.telephone a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#informations .white-button {
+    width: 349px;
+}
+
+.obligations-legales {
+    background-color: mediumspringgreen;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    margin-left: 45px;
+    text-decoration: none;
+}
+
+.obligations-legales a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.cgv {
+    background-color: lightgray;
+}
+
+.mentions-legales {
+    background-color: lightsalmon;
+}
+
+/* rubrique réseaux sociaux */
+
+.logo {
+    background-color: mediumorchid;
+    height: auto;
+}
+
+.liens-container {
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liens-reseaux {
+    background-color: coral;
+}
+
+.liens-reseaux p {
+    background-color: deeppink;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.liens-reseaux i {
+    width: 30%;
+    color: var(--secondary-color);
+}
+
+.logos-reseaux {
+    background-color: gold;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.copyright {
+    background-color: greenyellow;
+}
+
+/* rubrique lien site */
+
+.footer-nav {
+    background-color: lightseagreen;
+    margin-right: 45px;
+}
+
+#liens-pages li {
+    list-style: none;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: right;
+}
+
+.footer-nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    color: var(--secondary-color);
+}

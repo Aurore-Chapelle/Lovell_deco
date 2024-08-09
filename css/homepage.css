@@ -1,41 +1,48 @@
 /* VARIABLES */
 
 :root {
-/* couleurs */
---primary-color: #004F59;
---secondary-color: #FEFFF9;
---golden-color: #D5C7A0;
---black-color: #000000;
-/* polices */
---font-primary: 'Lato', sans-serif;
---font-secondary: 'Poiret One', cursive;
+    /* couleurs */
+    --primary-color: #004F59;
+    --secondary-color: #FEFFF9;
+    --golden-color: #D5C7A0;
+    --black-color: #000000;
+    /* polices */
+    --font-primary: 'Lato', sans-serif;
+    --font-secondary: 'Poiret One', cursive;
 }
 
 /* PAGE */
 
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
+
 body {
-    margin: 0; font-size: 1.6rem;
+    margin: 0;
+    font-size: 1.6rem;
     font-family: var(--font-primary);
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
-
 
 /* classes récurrentes */
 .bandeau1 {
     height: 100px;
     background-color: #FEFFF9;
 }
+
 .bandeau2 {
     height: 150px;
     background-color: #FEFFF9;
 }
+
 .h2-poiretOne-blue {
     font-family: var(--font-secondary);
     color: var(--primary-color);
@@ -43,6 +50,7 @@ img {
     font-size: 32px;
     line-height: 40px;
 }
+
 .h2-poiretOne-white {
     font-family: var(--font-secondary);
     color: var(--secondary-color);
@@ -50,6 +58,7 @@ img {
     font-size: 32px;
     line-height: 40px;
 }
+
 .blue-button {
     height: 50px;
     background-color: var(--primary-color);
@@ -59,6 +68,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .white-button {
     height: 50px;
     background-color: var(--secondary-color);
@@ -69,413 +79,10 @@ img {
     cursor: pointer;
 }
 
-/* HEADER */
-
-header {
-    background-color: rgb(120, 108, 131);
-}
-#navbar {
-    height: 100px;
-    width: 100%;
-    display: flex;
-}
-#navbar .logo {
-    height: 100%;
-    cursor: pointer;
-}
-#navbar nav {
-    background-color: white;
-    display: flex;
-    width: 100%;
-    justify-items: center;
-}
-#navbar ul {
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    color: var(--primary-color);
-    width: 100%;
-    padding: 0px;
-    margin: 20px 100px;
-    cursor: pointer;
-}
-#navbar li {
-    list-style: none;
-    font-family: var(--font-secondary);
-    text-transform: uppercase;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
-#navbar a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-#herosection {
-    background-color: burlywood;
-    position: relative;
-    width: 100%;
-    margin-bottom: 100px;
-}
-#herosection figure{
-    margin: 0;
-}
-#herosection .agence {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-#herosection .encart {
-    background-color: rgba(217, 217, 217, 0.65);
-    width: 600px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-.encart p {
-    width: 392px;
-    text-transform: uppercase;
-    font-size: 56px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    color: var(--primary-color);
-}
-.encart button {
-    width: 371px;
-}
-
 /* MAIN */
 
 main {
     background-color: darkorchid;
     margin: 0;
     padding: 0;
-}
-
-/* Réalisations */
-
-#realisations h1 {
-    background-color: rgb(122, 106, 72);
-    font-family: var(--font-secondary);
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-size: 40px;
-    margin-left: 320px;
-    margin-bottom: 10px;
-}
-#realisations p {
-    background-color: darkorange;
-    font-family: var(--font-secondary);
-    color: var(--primary-color);
-    font-style: italic;
-    margin-left: 320px;
-    margin-bottom: 30px;
-}
-.multiple-items {
-    margin: 0 auto; /* Centre le slider horizontalement */
-    max-width: 1280px; /* Largeur maximale souhaitée pour le slider */
-}
-
-/* Style du slider */
-.slick-prev, .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: var(--primary-color); 
-    font-size: 2rem; 
-}
-
-
-
-/* AGENCE */
-
-#agence {
-background-color: lightskyblue;
-display: flex;
-justify-content: center;
-
-}
-.agence-container {
-    background-color: mediumvioletred;
-    /* width: 660px; */
-}
-.p-localisation {
-    display: flex;
-    background-color: lemonchiffon;
-    padding-top: 0px;
-}
-.p-team {
-    background-color: lavender;
-    display: flex;
-}
-#agence .h2-poiretOne-blue{
-    background-color: lightcoral;
-    width: 300px;
-    margin-right: 30px;
-    text-align: right;
-    margin-top: 0;
-}
-.vertical-line {
-    width: 250px;
-    height: 1px;
-    background-color: var(--golden-color);
-    margin-top: 15px;
-    margin-left: 50px;
-}
-#agence p {
-    background-color: lightpink;
-    width: 330px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    line-height: 24px;
-}
-#agence button {
-    width: 284px;
-    margin-left: 330px;
-}
-
-/* PRESTATIONS */
-
-#prestations {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 650px;
-}
-#prestations .img-container {
-    margin-right: 30px;
-}
-.p-prestations {
-    background-color: hotpink;
-    width: 426px;
-    height: 530px;
-}
-#prestations .vertical-line {
-    margin-left: 0;
-}
-#prestations h2.h2-poiretOne-white {
-    background-color: cornflowerblue;
-    width: 426px;
-    margin-top: 0;
-}
-#prestations p {
-    background-color: rgb(151, 214, 214);
-    width: 426px;
-    color: var(--secondary-color);
-    margin-bottom: 30px;
-    line-height: 24px;
-}
-#prestations button {
-    width: 373px;
-}
-
-/* TENDANCES */
-
-#tendances {
-    background-color: plum;
-    display: flex;
-    justify-content: center;
-}
-#tendances .img-prestations {
-
-}
-#tendances figure {
-    margin: 0;
-    padding-top: 0;
-}
-#tendances img {
-    background-color: darksalmon;
-    margin-bottom: 30px;
-}
-#tendances .paragraphe-tendances {
-    background-color: lightseagreen;
-    display: flex;
-}
-#tendances h2 {
-    background-color: burlywood;
-    width: 300px;
-    margin-right: 30px;
-    margin-top: 0;
-}
-#tendances .vertical-line {
-    margin-left: 0;
-}
-#tendances p {
-    background-color: cornflowerblue;
-    width: 330px;
-    margin-top: 0;
-
-    line-height: 24px;
-}
-.paragraphe-tendances + .blue-button {
-    width: 284px;
-    margin-left: 330px;
-}
-#tendances .paragraphe-newsletter {
-    background-color: salmon;
-    display: flex;
-    justify-content: flex-end;
-}
-.paragraphe-newsletter + .blue-button {
-    width: 366px;
-    margin-left: 294px;
-}
-
-/* FOOTER */
-
-/* structure du footer */
-
-footer {
-    background-color: var(--primary-color);
-    display: flex;
-}
-#informations {
-    background-color: lightseagreen;
-    width: 30%;
-    position: relative;
-}
-#reseaux-sociaux {
-    background-color: lightcyan;
-    width: 40%;
-}
-#liens-pages {
-    background-color: lightcoral;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-/* rubrique informations */
-
-.contacts {
-    background-color: cornsilk;
-    margin-left: 45px;
-    margin-top: 45px;
-}
-.adresse {
-    background-color: lightskyblue;
-    color: var(--secondary-color);
-}
-.adresse p {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
-.mail {
-    background-color: lightpink;
-    display: flex;
-    align-items: center;
-}
-#informations i {
-    color: var(--secondary-color);
-}
-.mail a{
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-.telephone {
-    background-color: lavender;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.telephone a{
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-#informations .white-button {
-    width: 349px;
-}
-.obligations-legales {
-    background-color: mediumspringgreen;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 45px;
-    left: 0;
-    right: 0;
-    box-sizing: border-box;
-    margin-left: 45px;
-    text-decoration: none;
-}
-.obligations-legales a{
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-.cgv {
-    background-color: lightgray;
-}
-
-.mentions-legales {
-    background-color: lightsalmon;
-}
-
-/* rubrique réseaux sociaux */
-
-.logo {
-    background-color: mediumorchid;
-    height: auto;
-}
-.liens-container {
-    background-color: deepskyblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.liens-reseaux {
-    background-color: coral;
-}
-.liens-reseaux p{
-    background-color: deeppink;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
-.liens-reseaux i{
-    width: 30%;
-    color: var(--secondary-color);
-}
-.logos-reseaux {
-    background-color: gold;
-    display: flex;
-    justify-content: space-around;
-    width: 200px;
-}
-.copyright {
-    background-color: greenyellow;
-}
-
-/* rubrique lien site */
-
-.footer-nav {
-    background-color: lightseagreen;
-    margin-right: 45px;
-}
-#liens-pages li {
-    list-style: none;
-    font-family: var(--font-secondary);
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: right;
-}
-.footer-nav a {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-.copyright {
-    margin-top: 30px;
-    margin-bottom: 45px;
-    color: var(--secondary-color);
 }

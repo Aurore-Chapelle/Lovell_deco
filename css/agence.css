@@ -1,0 +1,53 @@
+/* Agence */
+
+#agence {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.agence-container {
+    background-color: mediumvioletred;
+    /* width: 660px; */
+}
+
+.p-localisation {
+    display: flex;
+    background-color: lemonchiffon;
+    padding-top: 0px;
+}
+
+.p-team {
+    background-color: lavender;
+    display: flex;
+}
+
+#agence .h2-poiretOne-blue {
+    background-color: lightcoral;
+    width: 300px;
+    margin-right: 30px;
+    text-align: right;
+    margin-top: 0;
+}
+
+.vertical-line {
+    width: 250px;
+    height: 1px;
+    background-color: var(--golden-color);
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+#agence p {
+    background-color: lightpink;
+    width: 330px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+#agence button {
+    width: 284px;
+    margin-left: 330px;
+}

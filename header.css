@@ -1,0 +1,94 @@
+/* HEADER */
+
+/* HEADER */
+
+header {
+    background-color: rgb(120, 108, 131);
+}
+
+#navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+#navbar .logo {
+    height: 100%;
+    cursor: pointer;
+}
+
+#navbar nav {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--primary-color);
+    width: 100%;
+    padding: 0px;
+    margin: 20px 100px;
+    cursor: pointer;
+}
+
+#navbar li {
+    list-style: none;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#herosection {
+    background-color: burlywood;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#herosection figure {
+    margin: 0;
+}
+
+#herosection .agence {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#herosection .encart {
+    background-color: rgba(217, 217, 217, 0.65);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.encart p {
+    width: 392px;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.encart button {
+    width: 371px;
+}

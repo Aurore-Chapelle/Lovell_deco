@@ -1,0 +1,41 @@
+/* Réalisations */
+
+#realisations h1 {
+    background-color: rgb(122, 106, 72);
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 320px;
+    margin-bottom: 10px;
+}
+
+#realisations p {
+    background-color: darkorange;
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    font-style: italic;
+    margin-left: 320px;
+    margin-bottom: 30px;
+}
+
+.multiple-items {
+    margin: 0 auto;
+    /* Centre le slider horizontalement */
+    max-width: 1280px;
+    /* Largeur maximale souhaitée pour le slider */
+}
+
+/* Style du slider */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
