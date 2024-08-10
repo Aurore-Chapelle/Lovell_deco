@@ -88,5 +88,8 @@
     #agence button {
         width: 100%;
     }
-
+    .vertical-line {
+        margin-left: 0;
+    }
+    
 }
