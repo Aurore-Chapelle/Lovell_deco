@@ -1,9 +1,7 @@
 /* HEADER */
 
-/* HEADER */
-
 header {
-    background-color: rgb(120, 108, 131);
+    background-color: white;
 }
 
 #navbar {
@@ -18,7 +16,6 @@ header {
 }
 
 #navbar nav {
-    background-color: white;
     display: flex;
     width: 100%;
     justify-items: center;
@@ -52,6 +49,23 @@ header {
 #navbar a:hover {
     text-decoration: underline;
 }
+
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.mobile-nav .logo {
+    height: 80px;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 
 @media (min-width: 769px) and (max-width: 1920px) {
     .mobile-nav {
@@ -97,9 +111,9 @@ header {
 
 #navigation ul {
     list-style: none;
-    background-color: beige;
-    height: 200px;
-    width: auto;
+    background-color: white;
+    height: 100dvh;
+    width: 100dvw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -118,14 +132,13 @@ header {
 
 #navigation ul li a:hover {
     text-decoration: underline;
-    /* Ajoute un soulignement au survol si désiré */
 }
 
+/* herosection */
+
 #herosection {
-    background-color: burlywood;
     position: relative;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 #herosection figure {
@@ -133,16 +146,17 @@ header {
 }
 
 #herosection .agence {
-    width: 100%;
+    width: 1940px;
     height: auto;
     object-fit: cover;
 }
 
 #herosection .encart {
     background-color: rgba(217, 217, 217, 0.65);
-    width: 600px;
-    height: 600px;
+    width: 30%;
+    height: 75%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -153,14 +167,48 @@ header {
 }
 
 .encart p {
-    width: 392px;
+    width: 75%;
     text-transform: uppercase;
-    font-size: 56px;
+    font-size: 4em;
     font-weight: 900;
     margin-bottom: 30px;
     color: var(--primary-color);
 }
 
 .encart button {
-    width: 371px;
+    width: 75%;
+}
+
+.play-button {
+    display: none;
+    background-color: aqua;
+    width: 30%;
+}
+
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .encart p {
+        font-size: 24px;
+
+    }
+
+
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    .encart p {
+        font-size: 16px;
+    }
+
+    .encart .white-button {
+        /* display: none; */
+    }
+
+    .encart .play-button {
+        background-color: aquamarine;
+        width: 20px;
+    }
 }
