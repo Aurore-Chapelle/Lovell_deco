@@ -6,7 +6,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 
- @import url('homepage.css');
+@import url('homepage.css');
 
 .hamburger {
     padding: 15px 15px;
@@ -117,5 +117,21 @@
 }
 
 .hamburger-hidden {
-    visibility: hidden;
+    /* visibility: hidden; */
+
+
+    /* Au-dessus du reste de la page */
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.hamburger-show {
+    display: block;
 }
