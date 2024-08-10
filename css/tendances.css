@@ -11,6 +11,10 @@
     padding-top: 0;
 }
 
+.img-tendances img {
+    width: 100%;
+}
+
 .tendances-container {
     width: 40%;
 }

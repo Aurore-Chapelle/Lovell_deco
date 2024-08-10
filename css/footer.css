@@ -136,12 +136,18 @@ footer {
     margin-right: 10%;
 }
 
+#liens-pages ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
 #liens-pages li {
     list-style: none;
     font-family: var(--font-secondary);
     text-transform: uppercase;
     font-size: 20px;
-    text-align: right;
     line-height: 36px;
 }
 
