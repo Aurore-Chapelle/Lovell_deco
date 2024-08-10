@@ -1,53 +1,92 @@
 /* Agence */
 
 #agence {
-    background-color: lightskyblue;
+    width: 100%;
     display: flex;
     justify-content: center;
 
 }
 
 .agence-container {
-    background-color: mediumvioletred;
-    /* width: 660px; */
+    width: 40%;
 }
 
-.p-localisation {
+.container-localisation {
     display: flex;
-    background-color: lemonchiffon;
     padding-top: 0px;
+    margin-bottom: 40px;
 }
 
-.p-team {
-    background-color: lavender;
+.container-team {
     display: flex;
 }
 
 #agence .h2-poiretOne-blue {
-    background-color: lightcoral;
-    width: 300px;
-    margin-right: 30px;
+    width: 45%;
+    height: 100%;
+    margin-right: 5%;
     text-align: right;
     margin-top: 0;
 }
 
 .vertical-line {
-    width: 250px;
+    width: 65%;
     height: 1px;
     background-color: var(--golden-color);
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: auto;
 }
 
 #agence p {
-    background-color: lightpink;
-    width: 330px;
+    width: 50%;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     line-height: 24px;
 }
 
+.container-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
 #agence button {
-    width: 284px;
-    margin-left: 330px;
+    width: 50%;
+}
+
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .agence-container {
+        width: 70%;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    .agence-container {
+        width: 90%;
+    }
+
+    #agence .h2-poiretOne-blue {
+        width: 100%;
+        text-align: left;
+    }
+
+    .container-localisation {
+        flex-direction: column;
+    }
+
+    .container-team {
+        flex-direction: column;
+    }
+
+    #agence p {
+        width: 100%;
+    }
+
+    #agence button {
+        width: 100%;
+    }
+
 }

@@ -35,12 +35,10 @@ img {
 /* classes récurrentes */
 .bandeau1 {
     height: 100px;
-    background-color: #FEFFF9;
 }
 
 .bandeau2 {
     height: 150px;
-    background-color: #FEFFF9;
 }
 
 .h2-poiretOne-blue {
@@ -82,7 +80,6 @@ img {
 /* MAIN */
 
 main {
-    background-color: darkorchid;
     margin: 0;
     padding: 0;
 }
