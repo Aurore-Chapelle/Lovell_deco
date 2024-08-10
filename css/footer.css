@@ -8,7 +8,6 @@ footer {
 }
 
 #informations {
-    background-color: lightseagreen;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -17,12 +16,10 @@ footer {
 }
 
 #reseaux-sociaux {
-    background-color: lightcyan;
     width: 40%;
 }
 
 #liens-pages {
-    background-color: lightcoral;
     width: 30%;
     display: flex;
     align-items: center;
@@ -32,27 +29,29 @@ footer {
 /* rubrique informations */
 
 .contacts {
-    background-color: cornsilk;
     width: 80%;
     height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
 }
 
 .adresse {
-    background-color: lightskyblue;
     color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .adresse p {
     text-transform: uppercase;
     font-weight: 600;
     color: var(--secondary-color);
+
 }
 
 .mail {
-    background-color: lightpink;
     display: flex;
     align-items: center;
 }
@@ -67,7 +66,6 @@ footer {
 }
 
 .telephone {
-    background-color: lavender;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -83,7 +81,6 @@ footer {
 }
 
 .obligations-legales {
-    background-color: mediumspringgreen;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -95,14 +92,6 @@ footer {
     color: var(--secondary-color);
 }
 
-.cgv {
-    background-color: lightgray;
-}
-
-.mentions-legales {
-    background-color: lightsalmon;
-}
-
 /* rubrique réseaux sociaux */
 
 .logo-footer {
@@ -110,7 +99,6 @@ footer {
 }
 
 .liens-container {
-    background-color: deepskyblue;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -119,12 +107,10 @@ footer {
 }
 
 .liens-reseaux {
-    background-color: coral;
     width: 60%;
 }
 
 .liens-reseaux p {
-    background-color: deeppink;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--secondary-color);
@@ -137,20 +123,15 @@ footer {
 }
 
 .logos-reseaux {
-    background-color: gold;
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-.copyright {
-    background-color: greenyellow;
-}
 
 /* rubrique lien site */
 
 .footer-nav {
-    background-color: lightseagreen;
     width: 80%;
     margin-right: 10%;
 }
@@ -173,4 +154,82 @@ footer {
     margin-top: 30px;
     margin-bottom: 45px;
     color: var(--secondary-color);
+}
+
+.copyright-mobile {
+    display: none;
+}
+
+.copyright-dekstop {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+}
+
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .telephone {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    footer {
+        background-color: var(--primary-color);
+        flex-direction: column;
+    }
+
+    #informations {
+        width: 100%;
+    }
+
+    #reseaux-sociaux {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .obligations-legales {
+        margin: 30px 0;
+    }
+
+    .liens-container {
+        margin-top: 30px;
+    }
+
+    #liens-pages {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #liens-pages li {
+        text-align: justify;
+    }
+
+    .copyright-dekstop {
+        display: none;
+    }
+
+    .copyright-mobile {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 45px;
+        color: var(--secondary-color);
+    }
 }
