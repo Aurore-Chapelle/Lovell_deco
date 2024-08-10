@@ -4,7 +4,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 .agence-container {
@@ -88,8 +87,8 @@
     #agence button {
         width: 100%;
     }
+
     .vertical-line {
         margin-left: 0;
     }
-    
 }
