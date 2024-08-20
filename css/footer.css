@@ -37,23 +37,35 @@ footer {
 }
 
 .adresse {
+
     color: var(--secondary-color);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .adresse p {
     text-transform: uppercase;
     font-weight: 600;
     color: var(--secondary-color);
+}
 
+#informations .container-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#informations figure {
+    margin: 4%;
 }
 
 .mail {
     display: flex;
     align-items: center;
+    width: 60%;
 }
 
 #informations i {
@@ -68,7 +80,7 @@ footer {
 .telephone {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    width: 60%;
 }
 
 .telephone a {
@@ -76,15 +88,21 @@ footer {
     text-decoration: none;
 }
 
+#informations .container-button {
+    display: flex;
+    justify-content: center;
+}
+
 #informations .white-button {
-    width: 100%;
+    width: 60%;
 }
 
 .obligations-legales {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
+    margin-bottom: 40px;
 }
 
 .obligations-legales a {
@@ -156,19 +174,13 @@ footer {
     text-decoration: none;
 }
 
-.copyright {
-    margin-top: 30px;
-    margin-bottom: 45px;
-    color: var(--secondary-color);
-}
-
 .copyright-mobile {
     display: none;
 }
 
 .copyright-dekstop {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 30px;
     color: var(--secondary-color);
 }
 
@@ -196,6 +208,18 @@ footer {
 
     #informations {
         width: 100%;
+    }
+
+    .mail {
+        width: 90%;
+    }
+
+    .telephone {
+        width: 90%;
+    }
+
+    #informations .white-button {
+        width: 90%;
     }
 
     #reseaux-sociaux {
