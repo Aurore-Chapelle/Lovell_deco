@@ -1,0 +1,78 @@
+/* herosection */
+
+#herosection {
+    position: relative;
+    width: 100%;
+}
+
+#herosection figure {
+    margin: 0;
+}
+
+#herosection .agence {
+    width: 1940px;
+    height: auto;
+    object-fit: cover;
+}
+
+#herosection .encart {
+    background-color: rgba(217, 217, 217, 0.65);
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.encart p {
+    width: 75%;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.encart button {
+    width: 75%;
+}
+
+.play-button {
+    display: none;
+    background-color: aqua;
+    width: 30%;
+}
+
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .encart p {
+        font-size: 24px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    #herosection .encart {
+        background-color: rgba(217, 217, 217, 0.35);
+        width: 55%;
+        top: 50%;
+        left: 70%;
+    }
+
+    .encart p {
+        font-size: 16px;
+    }
+
+    .encart .play-button {
+        background-color: aquamarine;
+        width: 20px;
+    }
+}
