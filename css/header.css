@@ -1,7 +1,8 @@
 /* HEADER */
 
 header {
-    background-color: white;
+    /* background-color: var(--primary-color); */
+    background-color: var(--secondary-color);
 }
 
 #navbar {
@@ -25,7 +26,6 @@ header {
     display: flex;
     justify-content: space-around;
     text-decoration: none;
-    color: var(--primary-color);
     width: 100%;
     padding: 0px;
     margin: 20px 100px;
@@ -42,6 +42,7 @@ header {
 }
 
 #navbar a {
+    /* color: var(--secondary-color); */
     color: var(--primary-color);
     text-decoration: none;
 }
