@@ -8,18 +8,18 @@ footer {
 }
 
 #informations {
-    background-color: lightseagreen;
     width: 30%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #reseaux-sociaux {
-    background-color: lightcyan;
     width: 40%;
 }
 
 #liens-pages {
-    background-color: lightcoral;
     width: 30%;
     display: flex;
     align-items: center;
@@ -29,14 +29,20 @@ footer {
 /* rubrique informations */
 
 .contacts {
-    background-color: cornsilk;
-    margin-left: 45px;
-    margin-top: 45px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .adresse {
-    background-color: lightskyblue;
+
     color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .adresse p {
@@ -45,10 +51,21 @@ footer {
     color: var(--secondary-color);
 }
 
+#informations .container-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#informations figure {
+    margin: 4%;
+}
+
 .mail {
-    background-color: lightpink;
     display: flex;
     align-items: center;
+    width: 60%;
 }
 
 #informations i {
@@ -61,10 +78,9 @@ footer {
 }
 
 .telephone {
-    background-color: lavender;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    width: 60%;
 }
 
 .telephone a {
@@ -72,21 +88,21 @@ footer {
     text-decoration: none;
 }
 
+#informations .container-button {
+    display: flex;
+    justify-content: center;
+}
+
 #informations .white-button {
-    width: 349px;
+    width: 60%;
 }
 
 .obligations-legales {
-    background-color: mediumspringgreen;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 45px;
-    left: 0;
-    right: 0;
-    box-sizing: border-box;
-    margin-left: 45px;
+    justify-content: space-around;
     text-decoration: none;
+    margin-bottom: 40px;
 }
 
 .obligations-legales a {
@@ -94,37 +110,29 @@ footer {
     color: var(--secondary-color);
 }
 
-.cgv {
-    background-color: lightgray;
-}
-
-.mentions-legales {
-    background-color: lightsalmon;
-}
-
 /* rubrique réseaux sociaux */
 
-.logo {
-    background-color: mediumorchid;
-    height: auto;
+.logo-footer {
+    width: 100%;
 }
 
 .liens-container {
-    background-color: deepskyblue;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .liens-reseaux {
-    background-color: coral;
+    width: 60%;
 }
 
 .liens-reseaux p {
-    background-color: deeppink;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--secondary-color);
+    text-align: center;
 }
 
 .liens-reseaux i {
@@ -133,21 +141,24 @@ footer {
 }
 
 .logos-reseaux {
-    background-color: gold;
     display: flex;
     justify-content: space-around;
-    width: 200px;
+    width: 100%;
 }
 
-.copyright {
-    background-color: greenyellow;
-}
 
 /* rubrique lien site */
 
 .footer-nav {
-    background-color: lightseagreen;
-    margin-right: 45px;
+    width: 80%;
+    margin-right: 10%;
+}
+
+#liens-pages ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
 }
 
 #liens-pages li {
@@ -155,7 +166,7 @@ footer {
     font-family: var(--font-secondary);
     text-transform: uppercase;
     font-size: 20px;
-    text-align: right;
+    line-height: 36px;
 }
 
 .footer-nav a {
@@ -163,8 +174,92 @@ footer {
     text-decoration: none;
 }
 
-.copyright {
-    margin-top: 30px;
-    margin-bottom: 45px;
+.copyright-mobile {
+    display: none;
+}
+
+.copyright-dekstop {
+    margin-top: 80px;
+    margin-bottom: 30px;
     color: var(--secondary-color);
+}
+
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .telephone {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    footer {
+        background-color: var(--primary-color);
+        flex-direction: column;
+    }
+
+    #informations {
+        width: 100%;
+    }
+
+    .mail {
+        width: 90%;
+    }
+
+    .telephone {
+        width: 90%;
+    }
+
+    #informations .white-button {
+        width: 90%;
+    }
+
+    #reseaux-sociaux {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .obligations-legales {
+        margin: 30px 0;
+    }
+
+    .liens-container {
+        margin-top: 30px;
+    }
+
+    #liens-pages {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #liens-pages li {
+        text-align: justify;
+    }
+
+    .copyright-dekstop {
+        display: none;
+    }
+
+    .copyright-mobile {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 45px;
+        color: var(--secondary-color);
+    }
 }

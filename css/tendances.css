@@ -1,7 +1,7 @@
 /* Tendances */
 
 #tendances {
-    background-color: plum;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -11,20 +11,38 @@
     padding-top: 0;
 }
 
-#tendances img {
-    background-color: darksalmon;
+.img-tendances img {
+    width: 100%;
+}
+
+.tendances-container {
+    width: 40%;
+}
+
+.paragraphe-tendances {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     margin-bottom: 30px;
 }
 
-#tendances .paragraphe-tendances {
-    background-color: lightseagreen;
+.paragraphe-newsletter {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.texte-button-container {
+    width: 50%;
+}
+
+#tendances img {
+    margin-bottom: 30px;
 }
 
 #tendances h2 {
-    background-color: burlywood;
-    width: 300px;
-    margin-right: 30px;
+    width: 45%;
+    margin-right: 5%;
     margin-top: 0;
 }
 
@@ -33,25 +51,43 @@
 }
 
 #tendances p {
-    background-color: cornflowerblue;
-    width: 330px;
+    width: 100%;
     margin-top: 0;
-
     line-height: 24px;
 }
 
-.paragraphe-tendances+.blue-button {
-    width: 284px;
-    margin-left: 330px;
+#tendances button {
+    width: 100%;
 }
 
-#tendances .paragraphe-newsletter {
-    background-color: salmon;
-    display: flex;
-    justify-content: flex-end;
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tendances-container {
+        width: 70%;
+    }
 }
 
-.paragraphe-newsletter+.blue-button {
-    width: 366px;
-    margin-left: 294px;
+/* mobile */
+
+@media (max-width: 768px) {
+    .tendances-container {
+        width: 90%;
+    }
+
+    .paragraphe-tendances {
+        flex-direction: column;
+    }
+
+    .paragraphe-newsletter {
+        flex-direction: column;
+    }
+
+    #tendances h2 {
+        width: 100%;
+    }
+
+    .texte-button-container {
+        width: 100%;
+    }
 }

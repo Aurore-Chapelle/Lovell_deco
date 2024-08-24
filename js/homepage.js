@@ -7,7 +7,8 @@ $(document).ready(function () {
     // Toggle class "is-active"
     hamburger.classList.toggle("is-active");
     // Do something else, like open/close menu
-    hamburgerMenu.classList.toggle("hamburger-hidden");
+    // hamburgerMenu.classList.toggle("hamburger-hidden");
+    hamburgerMenu.classList.toggle("hamburger-show");
   });
   $(".multiple-items").slick({
     infinite: true,

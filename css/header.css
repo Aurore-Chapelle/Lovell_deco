@@ -1,9 +1,8 @@
 /* HEADER */
 
-/* HEADER */
-
 header {
-    background-color: rgb(120, 108, 131);
+    /* background-color: var(--primary-color); */
+    background-color: var(--secondary-color);
 }
 
 #navbar {
@@ -18,7 +17,6 @@ header {
 }
 
 #navbar nav {
-    background-color: white;
     display: flex;
     width: 100%;
     justify-items: center;
@@ -28,7 +26,6 @@ header {
     display: flex;
     justify-content: space-around;
     text-decoration: none;
-    color: var(--primary-color);
     width: 100%;
     padding: 0px;
     margin: 20px 100px;
@@ -45,50 +42,83 @@ header {
 }
 
 #navbar a {
+    /* color: var(--secondary-color); */
     color: var(--primary-color);
     text-decoration: none;
 }
 
-#herosection {
-    background-color: burlywood;
-    position: relative;
-    width: 100%;
-    margin-bottom: 100px;
+#navbar a:hover {
+    text-decoration: underline;
 }
 
-#herosection figure {
-    margin: 0;
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
 }
 
-#herosection .agence {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.mobile-nav .logo {
+    height: 80px;
 }
 
-#herosection .encart {
-    background-color: rgba(217, 217, 217, 0.65);
-    width: 600px;
-    height: 600px;
+.container-logo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    width: 100%;
 }
 
-.encart p {
-    width: 392px;
+
+@media (min-width: 769px) and (max-width: 1920px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #navbar li {
+        font-size: 16px;
+        transition: font-size 0.5s ease-in-out;
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+
+    #dekstop-nav {
+        display: none;
+    }
+}
+
+#navigation {
+    background-color: white;
+}
+
+#navigation ul {
+    list-style: none;
+    background-color: white;
+    height: 90dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    font-family: var(--font-secondary);
     text-transform: uppercase;
-    font-size: 56px;
-    font-weight: 900;
-    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
     color: var(--primary-color);
-}
-
-.encart button {
-    width: 371px;
 }

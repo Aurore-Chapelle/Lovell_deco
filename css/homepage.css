@@ -35,12 +35,10 @@ img {
 /* classes récurrentes */
 .bandeau1 {
     height: 100px;
-    background-color: #FEFFF9;
 }
 
 .bandeau2 {
     height: 150px;
-    background-color: #FEFFF9;
 }
 
 .h2-poiretOne-blue {
@@ -65,6 +63,7 @@ img {
     color: var(--secondary-color);
     border-color: var(--secondary-color);
     font-size: 16px;
+    font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -72,9 +71,10 @@ img {
 .white-button {
     height: 50px;
     background-color: var(--secondary-color);
-    color: var(--primarary-color);
+    color: var(--primary-color);
     border-color: var(--primary-color);
     font-size: 16px;
+    font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -82,7 +82,6 @@ img {
 /* MAIN */
 
 main {
-    background-color: darkorchid;
     margin: 0;
     padding: 0;
 }
