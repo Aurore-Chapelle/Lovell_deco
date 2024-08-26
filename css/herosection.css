@@ -35,7 +35,7 @@
 .encart p {
     width: 75%;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 64px;
     font-weight: 900;
     margin-bottom: 30px;
     color: var(--primary-color);
@@ -45,11 +45,6 @@
     width: 75%;
 }
 
-.play-button {
-    display: none;
-    background-color: aqua;
-    width: 30%;
-}
 
 /* tablette */
 
@@ -64,17 +59,17 @@
 @media (max-width: 768px) {
     #herosection .encart {
         background-color: rgba(217, 217, 217, 0.35);
-        width: 52%;
-        top: 50%;
-        left: 70%;
+        width: 90%;
+        top: 75%;
+        left: 50%;
+        height: 35%;
     }
 
     .encart p {
-        font-size: 16px;
+        font-size: 30px;
     }
 
-    .encart .play-button {
-        background-color: aquamarine;
-        width: 20px;
+    .encart button {
+        margin-bottom: 35px;
     }
 }

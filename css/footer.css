@@ -112,8 +112,14 @@ footer {
 
 /* rubrique réseaux sociaux */
 
-.logo-footer {
+#reseaux-sociaux .logo {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80%;
 }
 
 .liens-container {
