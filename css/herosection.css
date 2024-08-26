@@ -3,15 +3,17 @@
 #herosection {
     position: relative;
     width: 100%;
+
 }
 
 #herosection figure {
     margin: 0;
+
 }
 
-#herosection .agence {
-    width: 1940px;
-    height: auto;
+#herosection img {
+    width: 100vw;
+    height: 90vh;
     object-fit: cover;
 }
 

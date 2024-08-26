@@ -1,12 +1,16 @@
 /* HEADER */
 
 header {
-    /* background-color: var(--primary-color); */
     background-color: var(--secondary-color);
 }
 
+#header-herosection {
+    height: 100vh;
+    background-color: coral;
+}
+
 #navbar {
-    height: 100px;
+    height: 10vh;
     width: 100%;
     display: flex;
 }
@@ -45,6 +49,7 @@ header {
     /* color: var(--secondary-color); */
     color: var(--primary-color);
     text-decoration: none;
+    font-weight: 600;
 }
 
 #navbar a:hover {
